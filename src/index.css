@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+.link-item {
+  position: relative;
+}
+
+.link-item::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: #22d3ee;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.link-item:hover::after {
+  width: 100%;
+}
