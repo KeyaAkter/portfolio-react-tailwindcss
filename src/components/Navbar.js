@@ -3,7 +3,7 @@ import Anchor from "../components/Anchor";
 
 const Navbar = () => {
   return (
-    <nav className="navbar flex justify-center items-center bg-gray-900/80 backdrop-blur-xl shadow-lg h-20 fixed left-0 top-0 right-0 z-50 border-b border-cyan-700/10 ">
+    <nav className="navbar flex justify-center items-center bg-gray-900/80 backdrop-blur-xl shadow-md h-20 fixed left-0 top-0 right-0 z-50 border-b border-cyan-700/30 ">
       <div className="navbar-content container mx-auto  flex  justify-between items-center">
         <HashLink
           smooth

@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section id="contact" className="contact container mx-auto py-20 ">
       <SectionTitle title="Contact" />
-      <div className="contact-wrapper flex gap-10">
+      <div className="contact-wrapper flex gap-10 w-full h-full">
         <div className="contact-left flex-1 bg-cyan-700/10 rounded-sm p-10 shadow-2xl border border-cyan-700/30 flex flex-col gap-10 items-start">
           <h3 className="text-3xl text-cyan-400">Send me a message</h3>
           <form className="form flex flex-col gap-5 w-full">
