@@ -1,3 +1,4 @@
+import { BsArrowRight } from "react-icons/bs";
 import SectionTitle from "./SectionTitle";
 import Project from "./Project";
 
@@ -67,12 +68,25 @@ const data = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="projects container mx-auto py-10">
+    <section id="projects" className="projects container mx-auto py-20">
       <SectionTitle title="Projects" />
       <div className="projects-wrapper grid grid-cols-3 gap-10 justify-center items-center">
         {data.map((project) => (
           <Project project={project} key={project.id} />
         ))}
+      </div>
+      <div className="mt-10 flex justify-center ">
+        <a
+          className=" link-item flex  items-center gap-1 group/link "
+          href="https://www.google.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          View all projects{" "}
+          <span className="group-hover/link:translate-x-2  duration-500">
+            <BsArrowRight />
+          </span>
+        </a>
       </div>
     </section>
   );

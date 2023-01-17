@@ -1,3 +1,5 @@
+import { BsArrowUpRight } from "react-icons/bs";
+
 const Project = ({ project }) => {
   return (
     <div className="project flex flex-col gap-5 bg-cyan-700/10 overflow-hidden rounded shadow-2xl border border-cyan-700/30 group">
@@ -21,26 +23,35 @@ const Project = ({ project }) => {
             href={project.live}
             target="_blank"
             rel="noreferrer"
-            className="link-item"
+            className="link-item flex items-center gap-1 group/link"
           >
-            Live Site
+            Live Site{" "}
+            <span className="group-hover/link:translate-x-1 group-hover/link:-translate-y-1 duration-500">
+              <BsArrowUpRight />
+            </span>
           </a>
           <a
             href={project.client}
             target="_blank"
             rel="noreferrer"
-            className="link-item"
+            className="link-item flex items-center gap-1 group/link"
           >
-            Front-End Code
+            Front-End Code{" "}
+            <span className="group-hover/link:translate-x-1 group-hover/link:-translate-y-1 duration-500">
+              <BsArrowUpRight />
+            </span>
           </a>
           {project.server && (
             <a
               href={project.server}
               target="_blank"
               rel="noreferrer"
-              className="link-item"
+              className="link-item flex items-center gap-1 group/link"
             >
-              Back-End Code
+              Back-End Code{" "}
+              <span className="group-hover/link:translate-x-1 group-hover/link:-translate-y-1 duration-500">
+                <BsArrowUpRight />
+              </span>
             </a>
           )}
         </div>

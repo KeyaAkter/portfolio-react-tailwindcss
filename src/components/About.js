@@ -16,7 +16,7 @@ const About = () => {
           </div>
           <span className="absolute top-10 left-10 w-3/5 h-full border border-cyan-700 bg-cyan-700/10 rounded-sm"></span>
         </div>
-        <div className="about-right flex-1 flex flex-col items-start gap-3">
+        <div className="about-right flex-[2] flex flex-col items-start gap-3">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga cum
             ipsum expedita ut repellendus odit maxime quae fugiat illo,

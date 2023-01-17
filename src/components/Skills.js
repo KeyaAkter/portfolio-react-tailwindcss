@@ -25,7 +25,7 @@ const Skills = () => {
   return (
     <section id="skills" className="skills container mx-auto py-20 ">
       <SectionTitle title="Skills" />
-      <div className="skills-wrapper flex gap-20 items-center">
+      <div className="skills-wrapper flex gap-10 items-center">
         <div className="skills-left flex-1 flex flex-col gap-3">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
